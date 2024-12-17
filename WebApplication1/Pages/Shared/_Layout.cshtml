@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
-<html lang="pl">
+<html lang="pl" data-darkreader-mode="dynamic">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" content="width=device-width, initial-scale=1.0"/>
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Site Name</title>
@@ -11,14 +11,18 @@
 </head>
 <body>
     <header>
-        <b>Site Name</b>
+        <h1>Sim Web</h1>
         <nav>
             <a asp-page="/Index">Home</a>
+            <a asp-page="/Game">Game</a>
             <a asp-page="/Privacy">Privacy</a>
         </nav>
     </header>
     <main>
         @RenderBody()
     </main>
+    <footer>
+        <p>©2024 Adrian Gabryła</p>
+    </footer>
 </body>
 </html>

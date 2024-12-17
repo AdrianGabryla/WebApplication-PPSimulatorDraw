@@ -1,0 +1,10 @@
+﻿@page
+@model WebApplication1.Pages.GameModel
+@{
+    ViewData["ActivePage"] = "Game Simulation";
+}
+<h1>@ViewData["ActivePage"]</h1>
+<h2>Counter: @Model.Counter</h2>
+<form asp-page="/Game" method="post">
+    <button>Count</button>
+</form>
